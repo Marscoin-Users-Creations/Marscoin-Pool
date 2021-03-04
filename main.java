@@ -8,7 +8,12 @@
 
 public class mainClassDatas {
     
-    public static string marscoinPoolEnabled = 1;
+    public static void pools(String[] args) {
+        
+        public static bool bitcoinPoolEnabled = false;
+        public static bool marscoinPoolEnabled = true;
+        
+    }
     
 }
 
@@ -32,7 +37,12 @@ public class Main {
     
     public static void main(String[] args) {
         
-        if (mainClassDatas.marscoinPoolEnabled = 1) {
+        if (mainClassDatas.pools.bitcoinPoolEnabled = true) {
+            
+            System.out.println("The bitcoin pool is starting !");
+            
+        };
+        if (mainClassDatas.pools.marscoinPoolEnabled = true) {
             
             System.out.println("The marscoin pool is starting !");
             
