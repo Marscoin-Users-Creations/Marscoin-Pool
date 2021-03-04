@@ -40,19 +40,16 @@ public class Main {
         
         // default scanners
         
-        Scanner bitcoinPoolMode = new Scanner(System.in);
-        Scanner ethereumPoolMode = new Scanner(System.in);
-        Scanner litecoinPoolMode = new Scanner(System.in);
-        Scanner marscoinPoolMode = new Scanner(System.in);
+        Scanner consoleInput = new Scanner(System.in);
         
         System.out.println("Does we activate the bitcoin mining pool ?");
-        mainClassDatas.pools.bitcoinPool = bitcoinPoolMode.nextLine();
+        mainClassDatas.pools.bitcoinPool = consoleInput.nextLine();
         System.out.println("Does we activate the ethereum mining pool ?");
-        mainClassDatas.pools.ethereumPool = ethereumPoolMode.nextLine();
+        mainClassDatas.pools.ethereumPool = consoleInput.nextLine();
         System.out.println("Does we activate the litecoin mining pool ?");
-        mainClassDatas.pools.litecoinPool = litecoinPoolMode.nextLine();
+        mainClassDatas.pools.litecoinPool = consoleInput.nextLine();
         System.out.println("Does we activate the marscoin mining pool ?");
-        mainClassDatas.pools.marscoinPool = marscoinPoolMode.nextLine();
+        mainClassDatas.pools.marscoinPool = consoleInput.nextLine();
         
         // default ifs
         
