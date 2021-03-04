@@ -1,7 +1,6 @@
-
 // default imports
 
-
+import java.util.Scanner;
 
 
 // main class
@@ -41,19 +40,19 @@ public class Main {
         
         // default scanners
         
-        Scanner activateBitcoinPool = new Scanner(System.in);
-        Scanner activateEthereumPool = new Scanner(System.in);
-        Scanner activateLitecoinPool = new Scanner(System.in);
-        Scanner activateMarscoinPool = new Scanner(System.in);
+        Scanner bitcoinPoolMode = new Scanner(System.in);
+        Scanner ethereumPoolMode = new Scanner(System.in);
+        Scanner litecoinPoolMode = new Scanner(System.in);
+        Scanner marscoinPoolMode = new Scanner(System.in);
         
         System.out.println("Does we activate the bitcoin mining pool ?");
-        mainClassDatas.pools.bitcoinPool = scanner.nextLine();
+        mainClassDatas.pools.bitcoinPool = bitcoinPoolMode.nextLine();
         System.out.println("Does we activate the ethereum mining pool ?");
-        mainClassDatas.pools.ethereumPool = scanner.nextLine();
+        mainClassDatas.pools.ethereumPool = ethereumPoolMode.nextLine();
         System.out.println("Does we activate the litecoin mining pool ?");
-        mainClassDatas.pools.litecoinPool = scanner.nextLine();
+        mainClassDatas.pools.litecoinPool = litecoinPoolMode.nextLine();
         System.out.println("Does we activate the marscoin mining pool ?");
-        mainClassDatas.pools.marscoinPool = scanner.nextLine();
+        mainClassDatas.pools.marscoinPool = marscoinPoolMode.nextLine();
         
         // default ifs
         
