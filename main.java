@@ -34,7 +34,7 @@ public class Main {
         
         if (mainClassDatas.marscoinPoolEnabled = 1) {
             
-            System.out.print("The marscoin pool is starting !");
+            System.out.println("The marscoin pool is starting !");
             
         };
         
