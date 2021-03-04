@@ -13,6 +13,12 @@ public class mainClassDatas {
         int ethereumPool = 0;
         int litecoinPool = 0;
         int marscoinPool = 0;
+        int poolCanBeStarted = 0;
+        
+    }
+    public static void threading(String[] args) {
+        
+        int threadsNumber = 0;
         
     }
     
@@ -42,6 +48,8 @@ public class Main {
         
         Scanner consoleInput = new Scanner(System.in);
         
+        System.out.println("How many threads will be used by the pool ?");
+        mainClassDatas.threading.threadsNumber = consoleInput.nextLine();
         System.out.println("Does we activate the bitcoin mining pool ?");
         mainClassDatas.pools.bitcoinPool = consoleInput.nextLine();
         System.out.println("Does we activate the ethereum mining pool ?");
@@ -53,6 +61,90 @@ public class Main {
         
         // default ifs
         
+        if (mainClassDatas.threading.threadsNumber = 0) {
+            
+            System.out.println("The number of threads used by the pool can't be set as 0, you need to set at a minimum of 1 !");
+            System.out.println("How many threads you want to be used by the pool ?");
+            mainClassDatas.threading.threadsNumber = consoleInput.nextLine();
+            
+        } else {
+            
+            if (mainClassDatas.threading.threadsNumber = 1) {
+                
+                System.out.println("One thread will be used by the pool !");
+                mainClassDatas.pools.poolCanBeStarted = 1;
+                
+            } else {
+                
+                if (mainClassDatas.threading.threadsNumber = 2) {
+                    
+                    System.out.println("Two threads will be used by the pool !");
+                    mainClassDatas.pools.poolCanBeStarted = 1;
+                    
+                } else {
+                    
+                    if (mainClassDatas.threading.threadsNumber = 3) {
+                        
+                        System.out.println("Three threads will be used by the pool !");
+                        mainClassDatas.pools.poolCanBeStarted = 1;
+                        
+                    } else {
+                        
+                        if (mainClassDatas.threading.threadsNumber = 4) {
+                            
+                            System.out.println("Four threads will be used by the pool !");
+                            mainClassDatas.pools.poolCanBeStarted = 1;
+                            
+                        } else {
+                            
+                            if (mainClassDatas.threading.threadsNumber = 5) {
+                                
+                                System.out.println("Five threads will be used by the pool !");
+                                mainClassDatas.pools.poolCanBeStarted = 1;
+                                
+                            } else {
+                                
+                                if (mainClassDatas.threading.threadsNumber = 6) {
+                                    
+                                    System.out.println("Six threads will be used by the pool !");
+                                    mainClassDatas.pools.poolCanBeStarted = 1;
+                                    
+                                } else {
+                                    
+                                    if (mainClassDatas.threading.threadsNumber = 7) {
+                                        
+                                        System.out.println("Seven threads will be used by the pool !");
+                                        mainClassDatas.pools.poolCanBeStarted = 1;
+                                        
+                                    } else {
+                                        
+                                        if (mainClassDatas.threading.threadsNumber = 8) {
+                                            
+                                            System.out.println("Eight threads will be used by the pool !");
+                                            mainClassDatas.pools.poolCanBeStarted = 1;
+                                            
+                                        } else {
+                                            
+                                            System.out.println("Error, the number of threads is not between 0 to 8");
+                                            System.out.println("The number of threads was set as " +mainClassDatas.threading.threadsNumber +" .");
+                                            
+                                        }
+                                        
+                                    }
+                                    
+                                };
+                                
+                            };
+                            
+                        };
+                        
+                    };
+                    
+                };
+                
+            };
+            
+        };
         if (mainClassDatas.pools.bitcoinPool = 1) {
             
             System.out.println("The bitcoin pool is starting !");
