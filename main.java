@@ -221,3 +221,20 @@ public class Main {
     }
     
 }
+public interface Runnable{
+    
+    Thread thread1 = new Thread(this1);
+    Thread thread2 = new Thread(this2);
+    
+    public void run() {
+        
+        this1.start();
+        
+    }
+    public void stop() {
+        
+        
+        
+    }
+    
+}
