@@ -11,6 +11,8 @@ public class mainClassDatas {
     public static void pools(String[] args) {
         
         int bitcoinPoolEnabled = 0;
+        int ethereumPoolEnabled = 0;
+        int litecoinPoolEnabled = 0;
         int marscoinPoolEnabled = 1;
         
     }
@@ -40,6 +42,16 @@ public class Main {
         if (mainClassDatas.pools.bitcoinPoolEnabled = 1) {
             
             System.out.println("The bitcoin pool is starting !");
+            
+        };
+        if (mainClassDatas.pools.ethereumPoolEnabled = 1) {
+            
+            System.out.println("The ethereum pool is starting !");
+            
+        };
+        if (mainClassDatas.pools.litecoinPoolEnabled = 1) {
+            
+            System.out.println("The litecoin pool is starting !");
             
         };
         if (mainClassDatas.pools.marscoinPoolEnabled = 1) {
