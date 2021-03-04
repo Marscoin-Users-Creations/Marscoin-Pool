@@ -10,10 +10,10 @@ public class mainClassDatas {
     
     public static void pools(String[] args) {
         
-        int bitcoinPoolEnabled = 0;
-        int ethereumPoolEnabled = 0;
-        int litecoinPoolEnabled = 0;
-        int marscoinPoolEnabled = 1;
+        int bitcoinPool = 0;
+        int ethereumPool = 0;
+        int litecoinPool = 0;
+        int marscoinPool = 0;
         
     }
     
@@ -39,24 +39,94 @@ public class Main {
     
     public static void main(String[] args) {
         
-        if (mainClassDatas.pools.bitcoinPoolEnabled = 1) {
+        // default scanners
+        
+        Scanner activateBitcoinPool = new Scanner(System.in);
+        Scanner activateEthereumPool = new Scanner(System.in);
+        Scanner activateLitecoinPool = new Scanner(System.in);
+        Scanner activateMarscoinPool = new Scanner(System.in);
+        
+        System.out.println("Does we activate the bitcoin mining pool ?");
+        mainClassDatas.pools.bitcoinPool = scanner.nextLine();
+        System.out.println("Does we activate the ethereum mining pool ?");
+        mainClassDatas.pools.ethereumPool = scanner.nextLine();
+        System.out.println("Does we activate the litecoin mining pool ?");
+        mainClassDatas.pools.litecoinPool = scanner.nextLine();
+        System.out.println("Does we activate the marscoin mining pool ?");
+        mainClassDatas.pools.marscoinPool = scanner.nextLine();
+        
+        // default ifs
+        
+        if (mainClassDatas.pools.bitcoinPool = 1) {
             
             System.out.println("The bitcoin pool is starting !");
             
+        } else {
+            
+            if (mainClassDatas.pools.bitcoinPool = 0) {
+                
+                System.out.println("The bitcoin pool will not be started !");
+                
+            } else {
+                
+                System.out.println("Error in the bitcoin pool status mode !");
+                System.out.println("Mode set as : " +mainClassDatas.pools.bitcoinPoolEnabled +" the mode can only be set as 1 for active and 0 for inactive !");
+                
+            };
+            
         };
-        if (mainClassDatas.pools.ethereumPoolEnabled = 1) {
+        if (mainClassDatas.pools.ethereumPool = 1) {
             
             System.out.println("The ethereum pool is starting !");
             
+        } else {
+            
+            if (mainClassDatas.pools.ethereumPool = 0) {
+                
+                System.out.println("The ethereum pool will not be started !");
+                
+            } else {
+                
+                System.out.println("Error in the ethereum pool status mode :");
+                System.out.println("Mode set as : " +mainClassDatas.pools.ethereumPool +" the mode can only be set as 1 for active and 0 for inactive !");
+                
+            };
+            
         };
-        if (mainClassDatas.pools.litecoinPoolEnabled = 1) {
+        if (mainClassDatas.pools.litecoinPool = 1) {
             
             System.out.println("The litecoin pool is starting !");
             
+        } else {
+            
+            if (mainClassDatas.pools.litecoinPool = 0) {
+                
+                System.out.println("The litecoin pool will not be started !");
+                
+            } else {
+                
+                
+                System.out.println("Error in the litecoin pool status mode !");
+                System.out.println("Mode set as : " +mainClassDatas.pools.litecoinPool +" the mode can only be set as 1 for active and 0 for inactive !");
+            };
+            
         };
-        if (mainClassDatas.pools.marscoinPoolEnabled = 1) {
+        if (mainClassDatas.pools.marscoinPool = 1) {
             
             System.out.println("The marscoin pool is starting !");
+            
+        } else {
+            
+            if (mainClassDatas.pools.marscoinPool = 0) {
+                
+                System.out.println("The marscoin pool will not be started !");
+                
+            } else {
+                
+                System.out.println("Error in the marscoin pool status mode !");
+                System.out.println("Mode set as : " +mainClassDatas.pools.marscoinPool +" the mode can only be set as 1 for active and 0 for inactive !");
+                
+            };
             
         };
         
