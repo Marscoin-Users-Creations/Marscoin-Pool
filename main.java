@@ -27,6 +27,17 @@ public class mainClassDatas {
 
 public class mainClassFunctions {
     
+    
+    public void start() {
+        
+        
+        
+    }
+    public void stop() {
+        
+        
+        
+    }
     public static void gui(String[] args) {
         
         
