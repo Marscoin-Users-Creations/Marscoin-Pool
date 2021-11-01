@@ -18,7 +18,7 @@ int walletPort = 0; // set the coin wallet port here
 
 // main namespace
 
-namespace main() {
+namespace main {
     
     
     
